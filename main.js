@@ -63,14 +63,14 @@ function fat() {
 
 function eul() {
     var resultado = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = (Math.exp(resultado)).toFixed(3);
+    document.getElementById('resultado').innerHTML = (Math.exp(resultado)).toFixed(8);
 }
 
 //calcula fibonacci
 
 function fib() {
     var resultado = document.getElementById('resultado').innerHTML;
-    var resultadoNum = parseInt(resultado)
+    var resultadoNum = parseFloat(resultado)
     var fibonacci = [];
     fibonacci[0] = 0;
     fibonacci[1] = 1;
@@ -88,9 +88,50 @@ function fib() {
 
 function inv() {
     var resultado = document.getElementById('resultado').innerHTML;
-    var resultadoNum = parseInt(resultado)
+    var resultadoNum = parseFloat(resultado)
     document.getElementById('resultado').innerHTML = (1/resultadoNum).toFixed(3);
 }
+
+//calcula hexadecimal
+
+function hexa() {
+    var resultado = document.getElementById('resultado').innerHTML;
+    var resultadoNum = parseFloat(resultado)
+    var hexaResult = resultadoNum.toString(16)
+    document.getElementById('resultado').innerHTML = hexaResult;
+}
+
+//calcula octadecimal
+
+function octa() {
+    var resultado = document.getElementById('resultado').innerHTML;
+    var resultadoNum = parseFloat(resultado)
+    var hexaResult = resultadoNum.toString(8)
+    document.getElementById('resultado').innerHTML = hexaResult;
+}
+
+//calcula binario
+
+function bi() {
+    var resultado = document.getElementById('resultado').innerHTML;
+    var resultadoNum = parseFloat(resultado)
+    var hexaResult = resultadoNum.toString(2)
+    document.getElementById('resultado').innerHTML = hexaResult;
+}
+
+function pi() {
+    document.getElementById('resultado').innerHTML = (Math.PI).toFixed(10);
+}
+
+function ln() {
+    var resultado = document.getElementById('resultado').innerHTML;
+    var resultadoNum = parseFloat(resultado)
+    document.getElementById('resultado').innerHTML = (Math.log(resultadoNum)).toFixed(10);
+   
+
+}
+
+
 
 function calcular()
 {
