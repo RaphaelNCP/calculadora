@@ -30,7 +30,7 @@
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
     top: 60%;
-    left: 32%;
+    left: 30%;
     transform: translate(-50%,-50%);
     border-radius: 2px;
     padding: 10px;
@@ -41,7 +41,7 @@
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
     top: 60%;
-    left: 68%;
+    left: 70%;
     transform: translate(-50%,-50%);
     border-radius: 2px;
     padding: 10px;
